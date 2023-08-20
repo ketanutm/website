@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <style>
+      /* Your CSS styles here */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      html, body {
+        font-family: 'Playfair Display', serif;
+        display: grid;
+        background-color: #042a32;
+        align-content: center;
+        min-height: 100vh;
+        height: 100%;
+      }
+      .navbar-brand {
+        color: rgba(13, 13, 13, 0.932);
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      }
+      section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 70vh;
+        width: 95vw;
+        margin: 0 auto;
+      }
+      .image {
+        background: url("./1/aboutus.jpeg") center/cover no-repeat;
+      }
+      .content {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .content h2 {
+        text-transform: uppercase;
+        font-size: 36px;
+        letter-spacing: 6px;
+        opacity: 0.9;
+      }
+      .content span {
+        height: 0.5px;
+        width: 100px;
+        background: #777;
+        margin: 20px 0;
+      }
+      .content p {
+        top: 60px;
+        padding-bottom: 15px;
+        font-weight: 100;
+        opacity: 0.7;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+      .vertical-line {
+        height: 30px;
+        width: 0.5px;
+        background: #777;
+        margin: 0 auto;
+      }
+      .icons {
+        display: flex;
+        padding: 15px 0;
+      }
+      .icons li {
+        display: block;
+        padding: 5px;
+        margin: 5px;
+      }
+      .icons li i {
+        font-size: 26px;
+        opacity: 0.8;
+      }
+      .icons li i:hover {
+        color: #0b5e72;
+      }
+      .button {
+        background-color: #095465;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #1ddee8;
+      }
+      /* Styles for the sign-up form */
+      .signup-form {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .signup-form h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .signup-form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+      }
+      .signup-form input[type="text"],
+      .signup-form input[type="email"],
+      .signup-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .signup-form button {
+        background-color: #095465;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .signup-form button:hover {
+        background-color: #1ddee8;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="navbar-brand">A1 Retail Shop</a>
+
+    <!-- Sign-up form -->
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" class="button">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
